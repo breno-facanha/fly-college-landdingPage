@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}  
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #D53569, #DAAC51);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.container header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid #ffffff9d;
+}
+
+.container header .esquerda{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center; /*alinha verticalmente*/
+    color: white;
+    padding-left: 100px;
+}
+
+.container header .direita{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-center; 
+    align-items: center;
+}
+
+.container header .direita nav a{
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid transparent;
+}
+
+.container header .direita nav{
+    display: flex;
+    gap: 25px;
+}
+
+.container header .direita nav a:hover{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    color: #DAAC51;
+    transition: 0.9s all ease-in-out;
+}
+
+.container header .direita nav a#login{
+    background-color: white;
+    color: black;
+    transition: 0.3s all ease-in-out;
+    border-radius: 5px;
+}
+
+.container header .direita nav a#login:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.container main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container main .esquerda {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.container main .direita {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container main .esquerda h1 {
+    line-height: 0px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.container main .esquerda button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
